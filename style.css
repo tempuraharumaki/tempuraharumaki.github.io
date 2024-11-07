@@ -1,0 +1,20 @@
+h1{
+    font-size: 50px;
+}
+header{
+    text-align: center;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+header nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    background-color: gainsboro;
+}
+main.a figure img{
+    text-align: center;
+}
