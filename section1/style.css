@@ -11,13 +11,3 @@ td{
     padding: 3px;
     width: 6.6%x;
     height: 30px;
-}    
-td {
-	background: #f0e6cc;
-}
-.even {
-	background: #fbf8f0;
-}
-.odd {
-	background: #fefcf9;
-}
