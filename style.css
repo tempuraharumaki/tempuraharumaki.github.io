@@ -1,23 +1,131 @@
-h1{
-    font-size: 50px;
+/* 全体設定とリセット */
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* モダンな日本語フォントを優先 */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* 落ち着いた黒に近い色 */
+    background-color: #f8f8f8; /* わずかに暖色系の背景色 */
 }
-header{
+
+/* ヘッダー */
+header {
+    background-color: #fff; /* 白い背景 */
+    color: #333;
+    padding: 1.5rem 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ほんのり影をつけて立体感を出す */
 }
-header nav ul{
-    display: flex;
-    justify-content: space-around;
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em; /* 大きめのタイトル */
+    letter-spacing: 2px; /* 文字間隔を少し開ける */
+    color: #ff6f61; /* アクセントカラー（例: 明るいオレンジレッド） */
 }
-header nav ul li a{
-    color: black;
+
+/* ナビゲーション */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0; /* タイトルとの間隔を調整 */
+    display: flex; /* 横並びにする */
+    justify-content: center; /* 中央に配置 */
+    gap: 20px; /* リンク間のスペース */
+}
+
+nav li a {
     text-decoration: none;
+    color: #555; /* 少し濃いめの色 */
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease-in-out; /* ホバー時の色変化を滑らかに */
 }
-header nav ul li a:hover{
-    background-color: gainsboro;
+
+nav li a:hover {
+    color: #ff6f61; /* ホバー時にアクセントカラー */
 }
-main.a figure img{
+
+/* メインコンテンツ */
+main {
+    max-width: 900px; /* コンテンツの最大幅を制限して読みやすくする */
+    margin: 2rem auto; /* 中央に配置し、上下に余白 */
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* 柔らかな影 */
+    border-radius: 8px; /* 角を少し丸くする */
+}
+
+main h2 {
+    font-size: 2em;
+    color: #444;
+    border-bottom: 2px solid #ff6f61; /* アクセントカラーのアンダーライン */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
-footer nav ul li a:hover{
-    background-color: gainsboro;
+
+main p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
 }
+
+/* フッター */
+footer {
+    background-color: #333; /* 暗めの背景色 */
+    color: #eee; /* 明るい文字色 */
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem; /* メインコンテンツとの間隔 */
+}
+
+footer h2 {
+    margin: 0 0 1rem;
+    font-size: 1.5em;
+    color: #eee;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #fff; /* 白い文字色 */
+    font-size: 1em;
+    transition: color 0.3s ease-in-out;
+}
+
+footer li a:hover {
+    color: #ff6f61; /* ホバー時にアクセントカラー */
+}
+
+/* スマートフォン対応 (メディアクエリ) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column; /* 縦並びにする */
+        gap: 10px;
+    }
+
+    main {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    main h2 {
+        font-size: 1.5em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+}
+
