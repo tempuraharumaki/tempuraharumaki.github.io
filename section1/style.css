@@ -33,3 +33,19 @@
     font-size: 1.1em;
     line-height: 1.8;
 }
+
+/* 日記リストをデフォルトで非表示にする */
+.diary-entries-list {
+    display: none;
+    padding-top: 1rem;
+}
+
+/* 折りたたみボタンのスタイル */
+.toggle-button {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.month-title.active .toggle-button {
+    transform: rotate(180deg); /* 展開時にボタンを回転させる */
+}
