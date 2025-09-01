@@ -1,0 +1,40 @@
+/* ネタ案リストのスタイル */
+.idea-container {
+    display: grid; /* グリッドレイアウトの利用 */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* カードを自動で並べる */
+    gap: 2rem; /* カード間の余白 */
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.idea-card {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.idea-card:hover {
+    transform: translateY(-5px); /* ホバー時に少し上に移動 */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* 影を濃くする */
+}
+
+.idea-card h2 {
+    font-size: 1.5em;
+    color: #4285f4; /* Google風の青色をアクセントに */
+    margin-bottom: 0.5rem;
+}
+
+.idea-tag {
+    color: #fbbc05; /* タグにGoogle風の黄色をアクセントに */
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 1.5rem;
+}
+
+.idea-description {
+    color: #5f6368;
+    line-height: 1.6;
+}
