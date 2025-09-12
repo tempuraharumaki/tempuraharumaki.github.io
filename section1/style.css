@@ -1,170 +1,56 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大学お笑いの日記</title>
-    <link rel="stylesheet" href="/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <h1>大学お笑いの日記</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">トップページ</a></li>
-                <li><a href="../section2/index.html">ネタ案</a></li>
-                <li><a href="../section3/index.html">一人しりとり</a></li>
-            </ul>
-        </nav>
-    </header>
+/* 日記ページ専用のスタイル */
+.diary-container {
+    padding: 2rem;
+}
 
-    <main class="diary-container">
-        <section class="month-group">
-            <h2 class="month-title">2025年9月 <span class="toggle-button">▼</span></h2>
-            <div class="diary-entries-list">
-                <article class="diary-entry">
-                    <h3 class="diary-title">日記を始めようと思った日</h3>
-                    <p class="diary-date">2025年9月1日</p>
-                    <div class="diary-content">
-                        <p>
-                            最近大学お笑いをはじめ、お笑いを見る機会が増えていった。ネタ番組だったり、Youtubeで芸人や大学生があげているネタ動画をよく見ている。
-                            やっぱり俺と違うのは声の大きさ。みんな声が大きい。大きいというよりか自信をもって出している。俺は声を上げるかネタを飛ばさずにいるかでどちらかが本番中に犠牲になってしまう。
-                            前のライブでは声を出したらネタが飛んだ自信を出せたら声のことを意識せずに済むのだろうか。
-                        </p>
-                    </div>
-                </article>
-                <article class="diary-entry">
-                    <h3 class="diary-title">帰省</h3>
-                    <p class="diary-date">2025年9月2日</p>
-                    <div class="diary-content">
-                        <p>
-                            実家に帰る道中でポケヒミ神回みた。やっぱ芸人さんはすごい。実家ではサークルのことめっちゃ話した。仲良くやらしてもろてますって。それともう仮面浪人やめることを親に伝えた。お笑い一本勝負
-                        </p>
-                    </div>
-                </article>
-                <article class="diary-entry">
-                    <h3 class="diary-title">中高の友達</h3>
-                    <p class="diary-date">2025年9月3日</p>
-                    <div class="diary-content">
-                        <p>
-                            地元の友達と会って俺がお笑いサークル入ってることを話した。浪人ってしんどそうやな。俺も頑張らんと。
-                        </p>
-                    </div>
-                </article>
-                <article class="diary-entry">
-                    <h3 class="diary-title">ショッピング</h3>
-                    <p class="diary-date">2025年9月4日</p>
-                    <div class="diary-content">
-                        <p>
-                            お母さんと妹とアウトレットに行った。おしゃれな服買った。こんな服に見合うネタしたい。おもろいやつ。
-                        </p>
-                    </div>
-                </article>
-                <article class="diary-entry">
-                    <h3 class="diary-title">思い知り</h3>
-                    <p class="diary-date">2025年9月5日</p>
-                    <div class="diary-content">
-                        <p>
-                            今日は暇な日でラーメンを食べに行った。大学お笑いいっぱい見たけどアウトプットができない。見てどう学べばいいんだ。まだまだこれからやな。
-                        </p>
-                    </div>
-                </article>
-                <article class="diary-entry">
-                    <h3 class="diary-title">万博</h3>
-                    <p class="diary-date">2025年9月6日</p>
-                    <div class="diary-content">
-                        <p>
-                            今日は万博に行った。むっちゃ人がおおかった。学内ライブの人の前でも緊張するのどうやったら克服できるんだろう。声もちっちゃくなるしさあ。
-                        </p>
-                    </div>
-                </article>
-                <article class="diary-entry">
-                    <h3 class="diary-title">明日は合宿</h3>
-                    <p class="diary-date">2025年9月7日</p>
-                    <div class="diary-content">
-                        <p>
-                            今日は帰省から帰った。帰る前におばあちゃんにいい寿司屋さんに連れて行ってもらった。寿司でかうますぎるやろ。明日から合宿ですわ。
-                        </p>
-                    </div>
-                </article>
-                <article class="diary-entry">
-                    <h3 class="diary-title">合宿初日</h3>
-                    <p class="diary-date">2025年9月8日</p>
-                    <div class="diary-content">
-                        <p>
-                            とうとう始まった合宿。シャッフルコンビは一番話したことのある2年生の先輩となれた。うれしい。バスとかでもいっぱい話せてよかった。激辛企画も挑戦して盛り上がったのよかったね。もっと展開面白くできたかもね。
-                        </p>
-                    </div>
-                </article>
-                <article class="diary-entry">
-                    <h3 class="diary-title">合宿2日目</h3>
-                    <p class="diary-date">2025年9月9日</p>
-                    <div class="diary-content">
-                        <p>
-                            シャッフルコンビで会い方になった先輩とネタ合わせをした。参考にしているお笑いの動画を見たけどむっちゃおもろかったね。はまっちまったー。本番ではやっぱり声が出てない。いっつも声を出すことを忘れちゃうんだよなあ。でも先輩のツッコミさすがだね。
-                            いろいろ教えてほしいね。
-                        </p>
-                    </div>
-                </article>
-                <article class="diary-entry">
-                    <h3 class="diary-title">合宿最終日</h3>
-                    <p class="diary-date">2025年9月10日</p>
-                    <div class="diary-content">
-                        <p>
-                            合宿最終日、これでもう合宿終わりですか早いですね。ほとんどなんもしてない日になっちゃったけどお笑いの熱はちょっと上がったかな。大きい声出す練習とか家出してみたりね。
-                        </p>
-                    </div>
-                </article>
-                <article class="diary-entry">
-                    <h3 class="diary-title">お笑い熱</h3>
-                    <p class="diary-date">2025年9月11日</p>
-                    <div class="diary-content">
-                        <p>
-                            昼まで寝て、本コンビの相方とちょっと次やるコントについて話し合った。互いにネタ書いてみようってことになった。大爆笑場面が一個でもあるネタを作るのがまずの目標。
-                        </p>
-                    </div>
-                </article>
-                <article class="diary-entry">
-                    <h3 class="diary-title"></h3>
-                    <p class="diary-date">2025年9月12日</p>
-                    <div class="diary-content">
-                        <p></p>
-                    </div>
-                </article>
-                <article class="diary-entry">
-                    <h3 class="diary-title"></h3>
-                    <p class="diary-date">2025年9月13日</p>
-                    <div class="diary-content">
-                        <p></p>
-                    </div>
-                </article>                                                                                                                                                       
-            </div>
-        </section>
+.diary-entry {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    border-left: 5px solid #ff6f61; /* アクセントカラーのライン */
+}
 
-        <section class="month-group">
-            <h2 class="month-title">2025年10月 <span class="toggle-button">▼</span></h2>
-            <div class="diary-entries-list">
-                <article class="diary-entry">
-                    <h3 class="diary-title">ネタ見せ初挑戦</h3>
-                    <p class="diary-date">2025年10月3日</p>
-                    <div class="diary-content">
-                        <p>...</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
+.diary-date {
+    color: #888;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
 
-    <footer>
-        <h2>質問があればこちらまで</h2>
-        <nav>
-            <ul>
-                <li><a href="mailto:tensei510200618@gmail.com">tensei510200618@gmail.com</a></li>
-            </ul>
-        </nav>
-    </footer>
-<script src="script-section1.js"></script>
-</body>
-</html>
+.diary-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* 日記リストをデフォルトで非表示にする */
+.diary-entries-list {
+    display: none;
+    padding-top: 1rem;
+}
+
+/* 折りたたみボタンのスタイル */
+.toggle-button {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.month-title.active .toggle-button {
+    transform: rotate(180deg); /* 展開時にボタンを回転させる */
+}
+
+.diary-title {
+    font-size: 2.2em;
+    color: #4285f4; /* 目を引く色に変更 */
+    border-bottom: 3px solid #fbbc05; /* 下に太い線を引く */
+    padding-bottom: 0.5rem; /* 下線と文字の間に余白を作る */
+    margin-bottom: 1rem;
+}
+
+.diary-title:hover {
+    color: #ea4335; /* ホバー時に色を変える */
+    text-shadow: 0 0 5px rgba(0,0,0,0.2); /* 影をつけて立体感を出す */
+    cursor: pointer;
+}
