@@ -61,3 +61,12 @@
     text-shadow: 0 0 5px rgba(0,0,0,0.2); /* 影をつけて立体感を出す */
     cursor: pointer;
 }
+
+.diary-title {
+    font-size: 2.2em;
+    color: #4285f4; /* 目を引く色に変更 */
+    border-bottom: 3px solid #fbbc05; /* 下に太い線を引く */
+    padding-bottom: 0.5rem; /* 下線と文字の間に余白を作る */
+    margin-bottom: 1rem;
+}
+
