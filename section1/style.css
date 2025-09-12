@@ -12,15 +12,6 @@
     border-left: 5px solid #ff6f61; /* アクセントカラーのライン */
 }
 
-.diary-title {
-    font-family: 'Playfair Display', serif; /* 日記のタイトルに合う上品なフォント */
-    font-size: 2.2em;
-    color: #333;
-    margin-bottom: 0.5rem;
-    font-weight: normal;
-    font-style: italic; /* 斜体で日記らしさを出す */
-}
-
 .diary-date {
     color: #888;
     font-size: 0.9em;
@@ -50,12 +41,6 @@
     transform: rotate(180deg); /* 展開時にボタンを回転させる */
 }
 
-.diary-title {
-    font-size: 2.2em;
-    color: #333;
-    transition: color 0.3s ease-in-out; /* 色の変化を滑らかにする */
-}
-
 .diary-title:hover {
     color: #ea4335; /* ホバー時に色を変える */
     text-shadow: 0 0 5px rgba(0,0,0,0.2); /* 影をつけて立体感を出す */
@@ -69,4 +54,3 @@
     padding-bottom: 0.5rem; /* 下線と文字の間に余白を作る */
     margin-bottom: 1rem;
 }
-
