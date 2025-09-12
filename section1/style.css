@@ -49,3 +49,15 @@
 .month-title.active .toggle-button {
     transform: rotate(180deg); /* 展開時にボタンを回転させる */
 }
+
+.diary-title {
+    font-size: 2.2em;
+    color: #333;
+    transition: color 0.3s ease-in-out; /* 色の変化を滑らかにする */
+}
+
+.diary-title:hover {
+    color: #ea4335; /* ホバー時に色を変える */
+    text-shadow: 0 0 5px rgba(0,0,0,0.2); /* 影をつけて立体感を出す */
+    cursor: pointer;
+}
