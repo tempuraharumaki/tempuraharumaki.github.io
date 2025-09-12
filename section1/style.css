@@ -49,7 +49,7 @@
     margin-bottom: 1rem;
 }
 
-.diary-title:hover {
+.month-title:hover {
     color: #ea4335; /* ホバー時に色を変える */
     text-shadow: 0 0 5px rgba(0,0,0,0.2); /* 影をつけて立体感を出す */
     cursor: pointer;
